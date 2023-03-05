@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+/*
+* {
+    border: 1px solid red;
+}
+*/
+
+/*
+ *
+ * App
+ *
+ */
+
+.App {
+    font-family: Helvetica;
+}
+.App button {
+    min-width: 200px;
+}
+
+/* 
+ * board-data
+ */
+
+.App .board-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 3px solid #dddddd;
+}
+.App .board-data .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 350px;
+}
+.App .board-data .row .label {
+    min-width: 120px;
+}
+.App .board-data .row input {
+    border: 1px solid #aaaaaa;
+    margin: 1px 0;
+    margin-right: 5px;
+    text-align: center;
+    max-width: 50px;
+}
+
+
+/* Hide input arrows */
+.App .board-data .row input::-webkit-outer-spin-button,
+.App .board-data .row input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.App .board-data .row input {
+    -moz-appearance: textfield;
+}
+
+
+.App .board-data .row .percent.hide {
+    visibility: hidden;
+}
+.App .board-data .submit {
+    margin-top: 10px;
+}
+
+/*
+ *
+ * Board
+ *
+ */
+
+.Board .bombs {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.Board .result {
+    text-align: center;
+    font-weight: bold;
+    font-size: 200%;
+}
+.Board .result.lose {
+    color: red;
+}
+.Board .result.win {
+    color: green;
+}
+
+.Board .reset {
+    margin: 10px;
+}
+
+.Board .row {
+    display: flex;
+    justify-content: center;
+}
+
+.Board .Cell {
+    background-color: #eeeeee;
+    
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+
+    border-left: 3px solid #dddddd;
+    border-top: 3px solid #dddddd;
+    border-right: 3px solid #cccccc;
+    border-bottom: 3px solid #cccccc;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Board .Cell.bomb img {
+    width: 100%;
+    height: 100%;
+}
+.Board .Cell.flag img {
+    width: 75%;
+    height: 75%;
+    filter: drop-shadow(0.5px 0 0 black) 
+            drop-shadow(0 0.5px 0 black)
+            drop-shadow(-0.5px 0 0 black) 
+            drop-shadow(0 -0.5px 0 black);
+}
+
+.Board .Cell.clear {
+    background-color: #cccccc;
+}
+.Board .Cell.wrong {
+    background-color: #ff4444;
+}
+
+.Board .Cell.num {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Board .Cell.num1 { color: blue;           }
+.Board .Cell.num2 { color: green;          }
+.Board .Cell.num3 { color: red;            }
+.Board .Cell.num4 { color: purple;         }
+.Board .Cell.num5 { color: maroon;         }
+.Board .Cell.num6 { color: rgb(0,150,150); } /* -(0,50,50) from turqoise */
+.Board .Cell.num7 { color: black;          }
+.Board .Cell.num8 { color: gray;           }
