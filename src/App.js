@@ -267,7 +267,7 @@ function App () {
             return
         }
         if (newHeight < MIN_HEIGHT || newHeight > MAX_HEIGHT) {
-            alert(`Height must be between ${MIN_WIDTH} and ${MAX_WIDTH}`)
+            alert(`Height must be between ${MIN_HEIGHT} and ${MAX_HEIGHT}`)
             return
         }
         if (newBombChance < 1 || newBombChance > 100) {
