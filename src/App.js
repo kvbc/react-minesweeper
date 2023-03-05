@@ -271,7 +271,7 @@ function App () {
             return
         }
         if (newBombChance < 1 || newBombChance > 100) {
-            alert('Bomb chance is a percentage value and must be between 1% and 100%')
+            alert('Bomb chance is a percentage value and must be between 1% and 99%')
             return
         }
 
