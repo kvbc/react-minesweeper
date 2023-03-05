@@ -270,7 +270,7 @@ function App () {
             alert(`Height must be between ${MIN_HEIGHT} and ${MAX_HEIGHT}`)
             return
         }
-        if (newBombChance < 1 || newBombChance > 100) {
+        if (newBombChance < 1 || newBombChance > 99) {
             alert('Bomb chance is a percentage value and must be between 1% and 99%')
             return
         }
