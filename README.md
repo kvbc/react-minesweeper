@@ -1,4 +1,4 @@
 # react-minesweeper
 minesweeper made in react
 
-![](github/screenshot.png)
+![](github/screenshot.PNG)
